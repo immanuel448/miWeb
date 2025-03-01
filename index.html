@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EML ING</title>
+    <link rel="stylesheet" href="espera.css">
+</head>
+
+<body>
+    <div class="background">
+        <!-- Fondo con patrón hexagonal -->
+        <img src="IMG/miTramado.svg" class="hexagon-pattern" a>
+
+        <!-- Contenedor principal -->
+        <div class="main-container">
+            <!-- Título principal -->
+            <h1 class="titulo" id="titulo">Lucero Emmanuel ING</h1>
+
+            <!-- Caja de texto -->
+            <textarea class="text-box" placeholder="Descripción"
+                disabled>Soy Ingeniero en Desarrollo de Software especializado en lenguajes tipados como C# y Java, y en desarrollo web con HTML, CSS y JavaScript. Me apasiona crear soluciones eficientes y funcionales. Con 8 años de experiencia en diseño gráfico, aplico mis conocimientos en UX para desarrollar interfaces intuitivas y visualmente atractivas, enfocadas en la mejor experiencia para el usuario.</textarea>
+
+            <!-- Contenedor de los rectángulos -->
+            <div class="contenedor">
+                <!-- Rectángulo 1 -->
+                <a href="https://www.youtube.com/@luceroemmanueling" class="rectangle-link" target="_blank"
+                    onclick="delayedRedirect(event, this)">
+                    <div class="rectangle">
+                        <div class="rectangle-content">
+                            <img src="IMG/yt.svg" alt="Imagen YT">
+                            <div class="rectangle-text">YouTube</div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Rectángulo 2 -->
+                <a href="https://github.com/immanuel448" class="rectangle-link" target="_blank"
+                    onclick="delayedRedirect(event, this)">
+                    <div class="rectangle">
+                        <div class="rectangle-content">
+                            <img src="IMG/gatito.svg" alt="Imagen Gatito">
+                            <div class="rectangle-text">GitHub</div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Rectángulo 3 -->
+                <a href="https://puntodeventa2023.epizy.com" class="rectangle-link" target="_blank"
+                    onclick="delayedRedirect(event, this)">
+                    <div class="rectangle">
+                        <div class="rectangle-content">
+                            <img src="IMG/web.svg" alt="Imagen Web">
+                            <div class="rectangle-text">Ejemplo Web</div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Rectángulo 4 -->
+                <a class="rectangle-link">
+                    <div class="rectangle">
+                        <div class="rectangle-content">
+                            <img src="IMG/milogo.svg" alt="Imagen Mi Logo">
+                            <div class="rectangle-text">EML</div>
+                        </div>
+                    </div>
+                </a>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="ajustes.js"></script>
+</body>
+
+</html>

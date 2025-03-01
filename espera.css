@@ -1,0 +1,297 @@
+/* Estilos generales para el body y html */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente todo el contenido */
+    justify-content: center; /* Centra todo el contenido verticalmente */
+    overflow: auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del fondo */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('IMG/fondo.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden; /* Esto asegura que cualquier parte del patrón fuera del fondo se oculte */
+}
+
+/* Animación del patrón hexagonal */
+.hexagon-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    animation: move 7.5s infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+/* Fuente personalizada */
+@font-face {
+    font-family: 'Berlin Sans FB Demi';
+    src: url('FONTS/berlin-sans-fb-demi.TTF') format('truetype');
+}
+
+.main-container {
+    position: relative; /* Esto asegura que el contenedor principal esté por encima de otros elementos */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3; /* Z-index asegurará que este contenedor esté por encima del fondo */
+    text-align: center;
+}
+
+.titulo {
+    font-family: 'Berlin Sans', sans-serif;
+    font-size: 3.5vw;
+    text-shadow: 0 0.1vw 0.3vw rgba(0, 0, 0, 0.7);
+    text-align: center;
+    white-space: nowrap;
+    color: white;
+    margin: 0;
+    margin-top: 6.5vh;
+    padding: 0;
+    width: 100%;
+    position: relative; /* Esto coloca el título en su propia capa */
+    z-index: 4; /*título esté por encima de los otros elementos */
+    cursor: default;
+}
+
+.cursor {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Contenedor para el resto de los elementos */
+.text-box,
+.contenedor {
+    position: relative;
+    z-index: 2; /* Asegura que estos estén debajo del título, pero por encima del fondo */
+}
+
+
+/* Caja de texto centrada */
+.text-box {
+    width: 80%; /* 80% del ancho de la pantalla */
+    height: 25vh;
+    margin: 7vh 0 9vh 0;
+    font-size: clamp(1rem, 1.65vw, 3rem); /* Tamaño flexible */
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 0.75vw;
+    padding: 2vw;
+    resize: none;
+    box-sizing: border-box;
+    transition: border 0.5s ease-in-out, transform 1.5s ease-in-out, filter 0.6s ease, box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el ratón sobre el rectángulo */
+.text-box:hover {
+    background-color: rgba(0, 0, 0, 0.6); /* Cambia el color de fondo al pasar el ratón */
+    transform: scale(1.025); /* Ejemplo de efecto transformado en hover */
+    box-shadow: 0 0 7px rgba(134, 134, 134, 0.7); /* Sombra más grande al pasar el ratón */
+}
+
+/* Contenedor para los enlaces */
+.contenedor {
+    display: flex;
+    flex-direction: row; /* Los rectángulos estarán en fila por defecto en pantallas grandes */
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    gap: 4vw; /* Espaciado entre los enlaces */
+    width: 80%; /* 80% del ancho de la pantalla */
+    z-index: 2;
+    box-sizing: border-box; /* Asegura que el padding y el border no afecten el tamaño */
+}
+
+/* Rectángulos */
+.rectangle-link {
+    width: 22vw; /* 22% del ancho de la pantalla */
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* Ajuste del espaciado entre la imagen y el texto */
+.rectangle-text {
+    margin-top: 4vh;
+    font-size: 1.75vw;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.rectangle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 1vw;
+    color: white;
+    font-size: 2vw;
+    transition: border 0.5s ease-in-out, transform 1.5s ease-in-out, filter 0.6s ease, box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el ratón sobre el rectángulo */
+.rectangle:hover {
+    background-color: rgba(0, 0, 0, 0.6); /* Cambia el color de fondo al pasar el ratón */
+    transform: scale(1.025); /* Ejemplo de efecto transformado en hover */
+    box-shadow: 0 0 7px rgba(134, 134, 134, 0.7); /* Sombra más grande al pasar el ratón */
+}
+
+/* Estilo para las imágenes dentro de los rectángulos */
+.rectangle img {
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    transition: transform 5s    , filter 0.6s ease, box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el ratón sobre el rectángulo */
+.rectangle:hover img {
+    transform: rotateY(360deg);
+    filter: drop-shadow(0 0 4vw rgba(255, 255, 255, 0.6)) brightness(1.5);
+}
+
+/* Media query para pantallas*/
+@media (max-width: 1200px) {
+    .text-box {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .text-box {
+        font-size: 2.2vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .titulo {
+        margin-top: 6vh;
+        font-size: 4vw;
+    }
+
+    .text-box {
+        font-size: 2.4vw;
+        margin: 5vh 0 7vh 0;
+    }
+
+    .rectangle-text {
+        font-size: 2.75vw;
+    }
+
+    /* Cambiar el contenedor de los rectángulos a dos filas (2 columnas) */
+    .contenedor {
+        display: grid; /* grid  para controlar mejor las columnas */
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+        gap: 4vw; /* Ajustar el espacio entre las filas y columnas */
+        width: 80%; /* El contenedor sigue teniendo el mismo tamaño que el text-box */
+        margin: 0 auto; /* Centrar el contenedor en la pantalla */
+    }
+
+    /* Ajustar el tamaño de los rectángulos */
+    .rectangle-link {
+        width: 100%; /* Ahora cada rectángulo ocupa el 100% del ancho de la columna */
+        height: 25vh; /* Mantener la altura de los rectángulos */
+    }
+}
+
+@media (max-width: 600px) {
+    .titulo {
+        margin-top: 6vh;
+        font-size: 4.5vw;
+    }
+
+    .text-box {
+        font-size: 2.7vw;
+        height: 23vh;
+        margin: 5vh 0 5vh 0;
+    }
+
+    .rectangle-text {
+        font-size: 3.5vw;
+    }
+}
+
+/* Media query para pantallas de 480px o menos */
+@media (max-width: 480px) {
+    .titulo {
+        margin-top: 5vh;
+        font-size: 4.75vw;
+    }
+
+    .text-box {
+        font-size: 2.4vw;
+        height: 15vh;
+        margin: 3.5vh 0 2vh 0;
+    }
+
+    .rectangle-text {
+        margin-top: 2.5vh;
+        font-size: 4vw;
+    }
+
+    /* Cambiar el contenedor de los rectángulos a una columna */
+    .contenedor {
+        display: grid; /*grid para apilar los elementos */
+        grid-template-columns: 1fr; /* Solo una columna */
+        gap: 2vh; /* Mayor espaciado entre los rectángulos */
+        width: 80%; /* Mantener el mismo ancho que el text-box */
+        margin: 0 auto; /* Centrar el contenedor */
+    }
+
+    /* Cada rectángulo ocupa todo el ancho del contenedor */
+    .rectangle-link {
+          height: 14.5vh; /* Ajustar la altura si es necesario */
+    }
+
+    .rectangle img {
+        width: 25%;
+    }
+}
+
+@media (max-width: 370px) {
+    .text-box {
+        font-size: 2.75vw;
+    }
+}
+
+
