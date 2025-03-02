@@ -204,6 +204,12 @@ body, html {
 }
 
 @media (max-width: 800px) {
+
+    .hexagon-pattern {
+        content: url('IMG/miTramadoMovil.svg'); /* Imagen para pantallas menores o iguales a 800px */
+    }
+
+
     .titulo {
         margin-top: 6vh;
         font-size: 4vw;
