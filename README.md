@@ -8,7 +8,7 @@ Esta es una **landing page interactiva y responsiva** creada como presentación 
 - ✍️ Efecto de escritura en el título principal (con JavaScript).
 - 📄 Descripción personal destacando experiencia en desarrollo de software y diseño UX.
 - 🔗 Cuatro accesos rápidos:
-  - [YouTube](https://www.youtube.com/@luceroemmanueling)
+  - [YouTube](https://www.youtube.com/@luceroemmanueling/playlists)
   - [GitHub](https://github.com/immanuel448)
   - [ERP Web de ejemplo](https://puntodeventa2023.epizy.com)
   - [WhatsApp](https://wa.me/528117147350)
