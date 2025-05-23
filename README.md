@@ -23,5 +23,3 @@ Esta es una **landing page interactiva y responsiva** creada como presentación 
 
 ---
 
-💡 Proyecto ideal para mostrar habilidades tanto en **frontend** como en **experiencia de usuario (UX)**.
-
