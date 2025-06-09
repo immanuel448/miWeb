@@ -81,7 +81,7 @@ body, html {
     padding: 0;
     width: 100%;
     position: relative; /* Esto coloca el título en su propia capa */
-    z-index: 4; /*título esté por encima de los otros elementos */
+    z-index: 4; /*título por encima de los otros elementos */
     cursor: default;
 }
 

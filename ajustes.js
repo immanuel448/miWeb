@@ -1,7 +1,7 @@
 /* 
- © 2025 Lucero Emmanuel ING
- Este proyecto es una muestra de portafolio personal.
- No está autorizado su uso comercial ni la redistribución sin permiso.
+    © 2025 Lucero Emmanuel ING
+    Este proyecto es una muestra de portafolio personal.
+    No está autorizado su uso comercial ni la redistribución sin permiso.
 */
 
 // window.addEventListener('resize', ajustarTamañoTexto);  // Escuchar cuando la ventana cambia de tamaño
