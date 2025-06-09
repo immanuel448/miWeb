@@ -1,13 +1,13 @@
 # 🌐 Página Personal – Lucero Emmanuel ING
 
-Esta es una **landing page interactiva y responsiva** creada como presentación personal. Desarrollada con **HTML, CSS y JavaScript**, combina diseño gráfico con programación para ofrecer una experiencia visual atractiva y profesional.
+Landing page **interactiva y responsiva** diseñada como carta de presentación profesional. Una sola pantalla que combina **efectos visuales, animaciones y accesos rápidos** con un enfoque gráfico y moderno.
 
-## 🧩 Características principales
+## 🎯 ¿Qué contiene?
 
-- 🎨 Fondo animado con patrón hexagonal dinámico.
-- ✍️ Efecto de escritura en el título principal (con JavaScript).
-- 📄 Descripción personal destacando experiencia en desarrollo de software y diseño UX.
-- 🔗 Cuatro accesos rápidos:
+- 🌀 **Fondo animado** con patrón hexagonal que se expande y contrae suavemente.
+- ✍️ **Animación de escritura** en el título principal mediante JavaScript.
+- 💬 **Descripción personal** debajo del título, destacando experiencia en desarrollo de software y diseño UX.
+- 🔗 **Cuatro accesos directos** con efectos al pasar el puntero:
   - [YouTube](https://www.youtube.com/@luceroemmanueling/playlists)
   - [GitHub](https://github.com/immanuel448)
   - [ERP Web de ejemplo](https://puntodeventa2023.epizy.com)
@@ -16,12 +16,20 @@ Esta es una **landing page interactiva y responsiva** creada como presentación 
 ## 🛠️ Tecnologías utilizadas
 
 - **HTML5** + **CSS3**
-- **JavaScript** (para efectos visuales y navegación)
-- **Media queries** para diseño responsivo
-- **Fuentes personalizadas**
-- **Diseño UI/UX** con enfoque gráfico y animaciones
+- **JavaScript** (para animaciones y comportamiento)
+- **Media queries** para adaptación responsiva
+- **Fuentes personalizadas y diseño centrado en UI/UX**
 
----
+## 🖼️ Vista previa
 
-💡 Proyecto ideal para mostrar habilidades tanto en **frontend** como en **experiencia de usuario (UX)**.
+> Captura de la página completa con todos los efectos visuales activos:
+
+![Captura de pantalla](ruta/a/tu-captura.jpg)
+
+> 💡 *Puedes abrirla en tamaño completo con clic derecho → "Abrir imagen en nueva pestaña".*
+
+## 🌐 Sitio Web en vivo
+
+🔗 [https://immanuel448.github.io/miWeb](https://immanuel448.github.io/miWeb)
+
 
