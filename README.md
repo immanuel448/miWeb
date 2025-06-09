@@ -24,7 +24,7 @@ Landing page **interactiva y responsiva** diseñada como carta de presentación 
 
 > Captura de la página completa con todos los efectos visuales activos:
 
-![Captura de pantalla](ruta/a/tu-captura.jpg)
+![Captura de pantalla](/IMG/miWeb.png)
 
 > 💡 *Puedes abrirla en tamaño completo con clic derecho → "Abrir imagen en nueva pestaña".*
 
