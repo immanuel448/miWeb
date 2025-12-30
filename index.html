@@ -5,81 +5,103 @@ Este proyecto es una muestra de portafolio personal. No está autorizado su uso 
 -->
 
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EML ING</title>
-    <link rel="stylesheet" href="espera.css">
-</head>
+    <link rel="stylesheet" href="espera.css" />
+  </head>
 
-<body>
+  <body>
     <div class="background">
-        <!-- Fondo con patrón hexagonal -->
-        <img src="IMG/miTramado.svg" class="hexagon-pattern">
+      <!-- Fondo con patrón hexagonal -->
+      <img src="IMG/miTramado.svg" class="hexagon-pattern" />
 
-        <!-- Contenedor principal -->
-        <div class="main-container">
-            <!-- Título principal -->
-            <h1 class="titulo" id="titulo">Lucero Emmanuel ING</h1>
+      <!-- Contenedor principal -->
+      <div class="main-container">
+        <!-- Título principal -->
+        <h1 class="titulo" id="titulo">Lucero Emmanuel ING</h1>
 
-            <!-- Caja de texto -->
-            <textarea class="text-box" placeholder="Descripción"
-                disabled>Soy Emmanuel y me enfoco en construir experiencias completas: desarrollo de páginas web y aplicaciones (sistemas a la medida o automatizaciones), diseño de imagen (logos, composiciones y vectorizaciones) y edición de video lista para impresión o para subir a redes. Me importa que cada proyecto sea claro, práctico y tenga una buena presentación. Creo en el trabajo bien hecho, en poner atención a los detalles y en entregar soluciones que realmente le faciliten la vida a quien las usa.
-            </textarea>
+        <!-- Caja de texto -->
+        <textarea class="text-box" placeholder="Descripción" disabled>
+Soy Emmanuel y me enfoco en construir experiencias completas: desarrollo de páginas web y aplicaciones (sistemas a la medida o automatizaciones), diseño de imagen (logos, composiciones y vectorizaciones) y edición de video lista para impresión o para subir a redes. Me importa que cada proyecto sea claro, práctico y tenga una buena presentación. Creo en el trabajo bien hecho, en poner atención a los detalles y en entregar soluciones que realmente le faciliten la vida a quien las usa.
+            </textarea
+        >
 
-            <!-- Contenedor de los rectángulos -->
-            <div class="contenedor">
-                <!-- Rectángulo 1 -->
-                <a href="https://www.youtube.com/@luceroemmanueling/playlists" class="rectangle-link" target="_blank"
-                    onclick="delayedRedirect(event, this)">
-                    <div class="rectangle">
-                        <div class="rectangle-content">
-                            <img src="IMG/yt.svg" alt="Logo YT">
-                            <div class="rectangle-text">YouTube</div>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Rectángulo 2 -->
-                <a href="https://github.com/immanuel448" class="rectangle-link" target="_blank"
-                    onclick="delayedRedirect(event, this)">
-                    <div class="rectangle">
-                        <div class="rectangle-content">
-                            <img src="IMG/gatito.svg" alt="Logo GitHub">
-                            <div class="rectangle-text">GitHub</div>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Rectángulo 3 -->
-                <a href="https://puntodeventa2023.epizy.com" class="rectangle-link" target="_blank"
-                    onclick="delayedRedirect(event, this)">
-                    <div class="rectangle">
-                        <div class="rectangle-content">
-                            <img src="IMG/web.svg" alt="Logo Web">
-                            <div class="rectangle-text">Ejemplo Web</div>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Rectángulo 4 -->
-                <a href="https://wa.me/528117147350" class="rectangle-link" target="_blank" onclick="delayedRedirect(event, this)">
-                    <div class="rectangle">
-                        <div class="rectangle-content">
-                            <img src="IMG/miWhatsApp.svg" alt="Logo WhatsApp">
-                            <div class="rectangle-text">WhatsApp</div>
-                        </div>
-                    </div>
-                </a>
-                
-
-
-
+        <!-- Contenedor de los rectángulos -->
+        <div class="contenedor">
+          <!-- Rectángulo 1 -->
+          <a
+            href="https://www.youtube.com/@luceroemmanueling/playlists"
+            class="rectangle-link"
+            target="_blank"
+            onclick="delayedRedirect(event, this)"
+          >
+            <div class="rectangle">
+              <div class="rectangle-content">
+                <img src="IMG/yt.svg" alt="Logo YT" />
+                <div class="rectangle-text">YouTube</div>
+              </div>
             </div>
+          </a>
+
+          <!-- Rectángulo 2 -->
+          <a
+            href="https://github.com/immanuel448"
+            class="rectangle-link"
+            target="_blank"
+            onclick="delayedRedirect(event, this)"
+          >
+            <div class="rectangle">
+              <div class="rectangle-content">
+                <img src="IMG/gatito.svg" alt="Logo GitHub" />
+                <div class="rectangle-text">GitHub</div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Rectángulo 3 -->
+          <a
+            href="https://puntodeventa2023.epizy.com"
+            class="rectangle-link"
+            target="_blank"
+            onclick="delayedRedirect(event, this)"
+          >
+            <div class="rectangle">
+              <div class="rectangle-content">
+                <img src="IMG/web.svg" alt="Logo Web" />
+                <div class="rectangle-text">Ejemplo Web</div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Rectángulo 4 -->
+          <a
+            href="https://wa.me/528117147350"
+            class="rectangle-link"
+            target="_blank"
+            onclick="delayedRedirect(event, this)"
+          >
+            <div class="rectangle">
+              <div class="rectangle-content">
+                <img src="IMG/miWhatsApp.svg" alt="Logo WhatsApp" />
+                <div class="rectangle-text">WhatsApp</div>
+              </div>
+            </div>
+          </a>
         </div>
+      </div>
     </div>
 
-    <script src="ajustes.js"></script>
-</body>
+    <a
+      href="https://wa.me/528117147350"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Contactar por WhatsApp"
+    >
+      <img src="IMG/miWhatsApp.svg" alt="WhatsApp" />
+    </a>
 
+    <script src="ajustes.js"></script>
+  </body>
 </html>
