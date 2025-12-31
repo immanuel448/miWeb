@@ -166,7 +166,7 @@ html {
 /* Ajuste del espaciado entre la imagen y el texto */
 .rectangle-text {
   margin-top: 4vh;
-  font-size: 1.75vw;
+  font-size: 1.7vw;
   font-family: Arial, sans-serif;
   color: white;
   text-align: center;
@@ -236,7 +236,7 @@ html {
 /* Hover → expansión */
 .whatsapp-float:hover {
   width: 210px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 1);
   transform: scale(1.025);
   box-shadow: 0 0 7px rgba(134, 134, 134, 0.7);
 }
@@ -280,6 +280,11 @@ html {
   transform: translateX(0);
 }
 
+.whatsapp-float,
+.whatsapp-float * {
+  text-decoration: none;
+}
+
 /* Media query para pantallas*/
 @media (max-width: 1200px) {
   .text-box {
@@ -321,7 +326,7 @@ html {
   }
 
   .rectangle-text {
-    font-size: 2.75vw;
+    font-size: 2.7vw;
   }
 
   /* Cambiar el contenedor de los rectángulos a dos filas (2 columnas) */
@@ -337,6 +342,16 @@ html {
   .rectangle-link {
     width: 100%; /* Ahora cada rectángulo ocupa el 100% del ancho de la columna */
     height: 25vh; /* Mantener la altura de los rectángulos */
+  }
+
+  .whatsapp-float {
+    width: 65px;
+    height: 65px;
+  }
+
+  .whatsapp-icon {
+    min-width: 65px;
+    height: 65px;
   }
 }
 
@@ -360,7 +375,17 @@ html {
   }
 
   .rectangle-text {
-    font-size: 3.5vw;
+    font-size: 3.45vw;
+  }
+
+  .whatsapp-float {
+    width: 60px;
+    height: 60px;
+  }
+
+  .whatsapp-icon {
+    min-width: 60px;
+    height: 60px;
   }
 }
 
@@ -384,7 +409,7 @@ html {
   }
 
   .rectangle-text {
-    margin-top: 2.5vh;
+    margin-top: 2.45vh;
     font-size: 4vw;
   }
 
@@ -407,18 +432,22 @@ html {
   }
 
   .whatsapp-float {
-    width: 55px;
+    width: 55px !important;
     height: 55px;
-  }
-
-  .whatsapp-icon {
-    min-width: 55px;
-    
-    height: 55px;
+    right: 1.5vw;
   }
 
   .whatsapp-text {
     display: none;
+  }
+
+  .whatsapp-icon {
+    min-width: 55px;
+    height: 55px;
+  }
+
+  .whatsapp-float:hover {
+    width: 55px;
   }
 }
 
