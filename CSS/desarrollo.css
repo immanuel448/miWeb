@@ -1,0 +1,27 @@
+.main-container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Cards Bootstrap – estilo premium */
+.card {
+  background-color: rgba(0, 0, 0, 0.45) !important;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease,
+    background-color 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background-color: rgba(0, 0, 0, 0.65) !important;
+  box-shadow: 0 0 18px rgba(0, 150, 255, 0.25);
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-text {
+  opacity: 0.9;
+}
