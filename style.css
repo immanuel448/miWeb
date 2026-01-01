@@ -290,6 +290,10 @@ html {
   .text-box {
     font-size: 1.75vw;
   }
+
+  .rectangle img {
+    width: 37.5%;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -302,11 +306,29 @@ html {
   .text-box {
     font-size: 1.8vw;
   }
+
+  .rectangle img {
+    width: 35%;
+  }
 }
 
 @media (max-width: 900px) {
   .text-box {
     font-size: 2vw;
+  }
+
+  .whatsapp-float {
+    width: 65px;
+    height: 65px;
+  }
+
+  .whatsapp-float:hover {
+    width: 190px;
+  }
+
+  .whatsapp-icon {
+    min-width: 65px;
+    height: 65px;
   }
 }
 
@@ -320,45 +342,48 @@ html {
     font-size: 4vw;
   }
 
+  /* //eeeee */
   .text-box {
     font-size: 2.1vw;
-    margin: 5vh 0 7vh 0;
-  }
-
-  .rectangle-text {
-    font-size: 2.7vw;
+    margin: 5vh 0 5vh 0;
   }
 
   /* Cambiar el contenedor de los rectángulos a dos filas (2 columnas) */
   .contenedor {
     display: grid; /* grid  para controlar mejor las columnas */
     grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
-    gap: 4vw; /* Ajustar el espacio entre las filas y columnas */
+    gap: 4vw; /* Ajustar el espacio entre las filas y columnas eeeeee*/
     width: 80%; /* El contenedor sigue teniendo el mismo tamaño que el text-box */
     margin: 0 auto; /* Centrar el contenedor en la pantalla */
+  }
+
+  .rectangle-text {
+    font-size: 2.7vw;
   }
 
   /* Ajustar el tamaño de los rectángulos */
   .rectangle-link {
     width: 100%; /* Ahora cada rectángulo ocupa el 100% del ancho de la columna */
-    height: 25vh; /* Mantener la altura de los rectángulos */
+    height: 20vh; /* Mantener la altura de los rectángulos eeeeeeee*/
   }
 
   .whatsapp-float {
     width: 65px;
-    height: 65px;
-  }
-
-  .whatsapp-icon {
-    min-width: 65px;
-    height: 65px;
+    height: 55px;
   }
 }
 
 @media (max-width: 700px) {
   .text-box {
     font-size: 2.3vw;
-    margin: 5vh 0 7vh 0;
+  }
+
+  .rectangle img {
+    width: 30%;
+  }
+
+  .whatsapp-float:hover {
+    width: 185px;
   }
 }
 
@@ -371,16 +396,21 @@ html {
   .text-box {
     font-size: 2.6vw;
     height: 23vh;
-    margin: 5vh 0 5vh 0;
+  }
+
+  .rectangle img {
+    width: 27.5%;
   }
 
   .rectangle-text {
-    font-size: 3.45vw;
+    /* eeee */
+    font-size: 3.1vw;
   }
 
+  /* eeeeeee */
   .whatsapp-float {
     width: 60px;
-    height: 60px;
+    height: 52.5px;
   }
 
   .whatsapp-icon {
@@ -404,50 +434,60 @@ html {
 
   .text-box {
     font-size: 2.9vw;
-    height: 15vh;
+    min-height: 22.5vh;
     margin: 3.5vh 0 2vh 0;
-  }
-
-  .rectangle-text {
-    margin-top: 2.45vh;
-    font-size: 4vw;
   }
 
   /* Cambiar el contenedor de los rectángulos a una columna */
   .contenedor {
     display: grid; /*grid para apilar los elementos */
     grid-template-columns: 1fr; /* Solo una columna */
-    gap: 2vh; /* Mayor espaciado entre los rectángulos */
+    gap: 0vw; /* Mayor espaciado entre los rectángulos eeeeeeeeee*/
     width: 80%; /* Mantener el mismo ancho que el text-box */
     margin: 0 auto; /* Centrar el contenedor */
   }
 
+  /* //eeeeee */
+  .rectangle {
+    height: 90%;
+  }
+
+  .rectangle-text {
+    margin-top: 2.25vh;
+    font-size: 3.5vw;
+  }
+
   /* Cada rectángulo ocupa todo el ancho del contenedor */
   .rectangle-link {
-    height: 14.5vh; /* Ajustar la altura si es necesario */
+    height: 13vh; /* Ajustar la altura si es necesario */
   }
 
   .rectangle img {
-    width: 25%;
+    /* eeeeeee */
+    width: 20%;
   }
 
   .whatsapp-float {
-    width: 55px !important;
-    height: 55px;
+    width: 52.5px;
+    height: 45px;
     right: 1.5vw;
   }
 
-  .whatsapp-text {
-    display: none;
-  }
+  .whatsapp-float:hover {
+    width: 165px;
+  } 
 
   .whatsapp-icon {
-    min-width: 55px;
-    height: 55px;
+    min-width: 50px;
+    height: 50px;
   }
 
-  .whatsapp-float:hover {
-    width: 55px;
+  .whatsapp-icon:hover {
+    padding-left: 5px;
+  }
+
+  .whatsapp-text {
+    font-size: 1.05rem;
   }
 }
 
@@ -460,6 +500,11 @@ html {
 @media (max-width: 390px) {
   .text-box {
     font-size: 3.3vw;
+  }
+
+  .rectangle img {
+    /* eeeeeee */
+    width: 19%;
   }
 }
 
