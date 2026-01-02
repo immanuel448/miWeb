@@ -49,3 +49,7 @@ body {
   src: url("../FONTS/berlin-sans-fb-demi.TTF") format("truetype");
 }
 
+.main-container {
+  position: relative;
+  z-index: 2;
+}
