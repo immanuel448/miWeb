@@ -6,7 +6,8 @@
 /* Cards Bootstrap – estilo premium */
 .card {
   background-color: rgba(0, 0, 0, 0.45) !important;
-  backdrop-filter: blur(6px);
+  /* eeeeeeee */
+  backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.08);
   transition: transform 0.4s ease, box-shadow 0.4s ease,
     background-color 0.4s ease;
@@ -24,4 +25,16 @@
 
 .card-text {
   opacity: 0.9;
+}
+
+/* ===== PROYECTOS ===== */
+.project-card {
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  border: none;
+  border-radius: 0.75vw;
+  padding: 2vw;
+}
+
+.project-card .btn {
+  align-self: flex-start;
 }

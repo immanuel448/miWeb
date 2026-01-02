@@ -73,6 +73,7 @@ html {
   font-family: Arial, sans-serif;
   color: white;
   background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
   border: none;
   border-radius: 0.75vw;
   padding: 2vw;
@@ -134,6 +135,7 @@ html {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
   border-radius: 1vw;
   color: white;
   font-size: 2vw;
