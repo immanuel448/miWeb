@@ -24,10 +24,8 @@
 
 /* ===== PROYECTOS ===== */
 .project-card {
-  /* background-color: rgba(0, 0, 0, 0.4); */
   border: none;
   border-radius: 0.75vw;
-  padding: 2vw;
 }
 
 .project-card .btn {
@@ -45,4 +43,18 @@
   background-color: rgba(0, 150, 255, 0.15);
   color: #ffffff;
   border-color: rgba(0, 150, 255, 1);
+}
+
+.tech-badge {
+  border: none;
+  border-radius: 0.75vw;
+  backdrop-filter: blur(2px);
+  color: white;
+  padding: 15px 0px;
+ }
+
+ .tech-badge:hover {
+  transform: none;
+  box-shadow: 0 0 18px rgba(0, 150, 255, 0.25);
+  background-color: rgba(0, 0, 0, 0.65) !important;
 }
