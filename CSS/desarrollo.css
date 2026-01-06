@@ -52,12 +52,41 @@
   backdrop-filter: blur(2px);
   color: white;
   padding: 15px 0px;
- }
+}
 
- .tech-badge:hover {
+.tech-badge:hover {
   transform: none;
   box-shadow: 0 0 18px rgba(0, 150, 255, 0.25);
   background-color: rgba(0, 0, 0, 0.65) !important;
 }
 
+.card-img-top {
+  /* redondea bordes de las imágenes */
+  border-radius: 0.75vw 0.75vw 0 0;
+  object-fit: cover;
+}
 
+/* SCROLL HORIZONTAL INFINITO */
+.tech-marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.tech-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+}
+
+.tech-badge {
+  min-width: 160px;           /* 🔑 evita que se aplaste */
+  text-align: center;
+  padding: 14px 20px;
+  border-radius: 0.75vw;
+  white-space: nowrap;
+
+  background-color: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(2px);
+  color: #fff;
+}
