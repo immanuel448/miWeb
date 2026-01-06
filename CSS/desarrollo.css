@@ -76,6 +76,13 @@
   display: flex;
   gap: 1rem;
   width: max-content;
+  cursor: default;
+  transition: opacity 0.3s ease;
+}
+
+.tech-track:hover {
+  opacity: 0.9;
+  filter: brightness(0.96);
 }
 
 .tech-badge {
@@ -90,3 +97,4 @@
   backdrop-filter: blur(2px);
   color: #fff;
 }
+
