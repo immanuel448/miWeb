@@ -1,7 +1,6 @@
 /* Cards Bootstrap – estilo premium */
 .card {
   background-color: rgba(0, 0, 0, 0.45) !important;
-  /* eeeeeeee */
   backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.08);
   transition: transform 0.4s ease, box-shadow 0.4s ease,
@@ -86,7 +85,7 @@
 }
 
 .tech-badge {
-  min-width: 160px;           /* 🔑 evita que se aplaste */
+  min-width: 160px;           /* evita que se aplaste */
   text-align: center;
   padding: 14px 20px;
   border-radius: 0.75vw;
